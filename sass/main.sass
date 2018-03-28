@@ -1,0 +1,362 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	// font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+/*==========my code==========*/
+.header
+	&__cont
+		&__row
+			&__col
+				display: flex
+				flex-direction: column
+				align-items: center
+				&__img
+					padding-top: 30px
+				&__present
+					padding-left: 10px
+					font-size: 27px
+					font-family: $ptsans-font
+					color: #18374b
+					line-height: 1
+				&__line
+					height: 2px
+					width: 100%
+					background-color: $black
+				&__title
+					padding: 50px 0 40px 0
+					font-size: 34px
+					font-family: $circe-font
+					font-weight: bold
+					color: $orange
+					text-transform: uppercase
+					line-height: 1.2
+				&__text
+					font-size: 34px
+					font-family: $circe-font
+					font-weight: bold
+					color: $black
+					text-transform: uppercase
+					text-align: center
+					line-height: 1.2
+					padding-bottom: 30px
+				&__btn
+					max-width: 435px
+					height: 70px
+					font-size: 30px
+					font-family: $ptsans-font
+					color: $white
+					font-weight: bold
+					line-height: 1.2
+					background-color: $orange
+					border-radius: 4px
+					border: none
+					outline: none
+					cursor: pointer
+					&:hover
+						box-shadow: 0 0 4px 3px $black
+
+.main
+	padding-top: 35px
+	min-height: 1275px
+	&__cont
+		&__row
+			&__col-left
+				background-color: $orange
+				&__calendar
+					display: flex
+					flex-direction: row
+					&__number
+						padding: 30px 0 0 30px
+						width: 130px
+						height: 125px
+						&__month
+							height: 30px
+							width: 110px
+							background-color: $text-color
+							color: $white
+							font-size: 22px
+							font-family: $ptsans-font
+							font-weight: bold
+							line-height: 1.2
+							text-align: center
+						&__numeric
+							height: 80px
+							width: 110px
+							background-color: $white
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: center
+							font-size: 60px
+							font-family: $ptsans-font
+							color: #c2c2c2
+							font-weight: bold
+							line-height: 1.2
+					&__time
+						padding: 25px 0 0 30px
+						&__day, &__month, &__clock
+							margin-bottom: 2px
+							font-size: 30px
+							font-family: $circe-font
+							color: $white
+							font-weight: bold
+							text-transform: uppercase
+							line-height: 1.2
+						&__line
+							margin-bottom: 5px
+							border-bottom: 1px solid $white
+							border-bottom-style: dashed
+							height: 2px
+							max-width: 250px
+				&__speaker
+					text-align: center
+					&__img
+						padding: 50px 0 35px 0
+					&__speak
+						font-size: 22px
+						font-family: $georgia-font
+						color: $white
+						font-style: italic
+						letter-spacing: 1px
+					&__name, &__last-name
+						margin-bottom: 0
+						font-size: 22px
+						font-family: $circe-font
+						color: $white
+						line-height: 1.2
+						text-transform: uppercase
+				&__desc
+					padding: 40px 20px 0 40px
+					&__ul
+						&__li
+							font-size: 18px
+							font-family: $ptsans-font
+							color: $white
+							line-height: 1.2
+							padding-bottom: 20px
+			&__col-right
+				background-color: #eaeaea
+				&__start-text
+					padding: 40px 10px 15px 15px
+					font-size: 21px
+					font-family: $ptsans-font
+					color: $text-color
+					font-weight: bold
+					text-transform: uppercase
+					text-align: center
+				&__time
+					display: flex
+					flex-direction: row
+					justify-content: center
+					&__block
+						&__square
+							margin: 5px
+							padding-top: 7px
+							width: 60px
+							height: 60px
+							background-color: #2b2e35
+							font-size: 48px
+							font-family: $circe-font
+							font-weight: bold
+							text-transform: uppercase
+							color: $white
+							border-radius: 10px
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: center
+						&__text
+							padding-top: 15px
+							font-size: 14px
+							font-family: $circe-font
+							color: #2b2e35
+							font-weight: bold
+							text-transform: uppercase
+							text-align: center
+				&__text
+					font-size: 24px
+					font-family: $myriad-font
+					color: $text-color
+					text-transform: uppercase
+					line-height: 1.2
+				&__desc
+					&__ul
+						&__li
+							font-size: 24px
+							font-family: $myriad-font
+							color: $text-color
+							line-height: 1.2
+							padding-bottom: 40px
+							list-style-image: url(../img/main/marker.png)
+
+	
+.block-one
+	padding-top: 50px
+	&__cont
+		&__row
+			&__col
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				&__format
+					padding-bottom: 45px
+					width: 60%
+					font-size: 24px
+					font-family: $georgia-font
+					color: $text-color
+					font-style: italic
+					line-height: 1.2
+					text-align: center
+				&__webinar
+					max-width: 400px
+					height: 60px
+					font-size: 36px
+					font-family: $ptsans-font
+					color: $white
+					font-weight: bold
+					line-height: 1.2
+					background-color: $orange
+					border: none
+					outline: none
+					cursor: pointer
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+				&__who-webinar
+					padding-top: 30px
+					font-size: 36px
+					font-family: $ptsans-font
+					color: $text-color
+					line-height: 1.2
+					text-align: center
+				&__line
+					padding-top: 40px
+					margin-bottom: 5px
+					border-bottom: 1px solid #64667b
+					border-bottom-style: dashed
+					height: 5px
+					width: 100%
+
+.block-two
+	margin-top: 45px
+	background-image: url(../img/block/bg-block.png)
+	background-size: cover
+	&__cont
+		&__row
+			&__col
+				&__title
+					font-size: 35px
+					font-family: $ptsans-font
+					color: $text-color
+					font-weight: bold
+					line-height: 1.2
+					text-align: center
+				&__text
+					font-size: 24px
+					font-family: $ptsans-font
+					color: $text-color
+					line-height: 1.2	
+
+.collage
+	margin-top: 30px
+	background-image: url(../img/collage/bg-collage.png)
+	background-size: cover
+	min-height: 650px
+	&__cont
+		&__row
+			&__col
+				&__img
+					width: 100%
+					height: auto
+					border: 6px solid $orange
+					
+
+.block-three
+	&__cont
+		&__row
+			&__col
+				&__text, &__text-one
+				font-size: 26px
+				font-family: $ptsans-font
+				color: $text-color
+				line-height: 1.2
+				&__text-one
+					padding: 45px 0
+					font-weight: bold
+				&__btn
+					width: 100%
+					height: 90px
+					font-size: 48px
+					font-family: $ptsans-font
+					color: $white
+					font-weight: bold
+					line-height: 1.2
+					text-align: center
+					background-color: $orange
+					border: none
+					outline: none
+					cursor: pointer
+					
+.footer
+	&__cont
+		&__row
+			&__col
+				min-height: 125px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				&__img
+					padding: 10px
+					transition: .3s ease-in-out
+					&:hover
+						transform: scale(1.1,1.1 )
+
+.bold
+	font-weight: bold
+
+.bold-size
+	font-weight: bold
+	font-size: 30px
+
+
+
+@import "media" // Всегда в конце
+
